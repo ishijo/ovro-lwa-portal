@@ -10,10 +10,10 @@ from __future__ import annotations
 try:
     from .version import version as __version__  # type: ignore[import-not-found]
 except ImportError:
-    __version__ = "0.0.0+unknown"i
+    __version__ = "0.0.0+unknown"
 
 from . import fits_to_zarr_xradio
 from .io import open_dataset
-from . import accessor
+from . import accessor as _accessor
 
 __all__ = ["__version__", "fits_to_zarr_xradio", "open_dataset"]
